@@ -1,12 +1,17 @@
-import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 const HomePage = React.lazy(() => import('./components/HomePage/HomePage'));
 const LoginPage = React.lazy(() => import('./components/LoginPage/LoginPage'));
+const Category = React.lazy(() => import('./components/Category/Category'));
+// const Topic = React.lazy(() => import('./components/Topic/Topic'));
 
 export const appRoutesConfig = [
-    {path: '/homepage', component: HomePage},
-    {path: '/loginpage', component: LoginPage}
+    { path: '/', component: HomePage },
+    { path: '/homepage', component: HomePage },
+    { path: '/loginpage', component: LoginPage },
+    { path: '/homepage/:id', component: Category }
+
 ];
 
 export const createRoute = (path, component, props) => (
