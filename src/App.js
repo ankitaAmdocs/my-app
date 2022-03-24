@@ -1,29 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
 import ApplicationRoutes from './App.routes';
+import { useHistory } from "react-router-dom";
 
 function App() {
+  const history = useHistory();
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button className="login-button" onClick={() => { history.push("/loginpage") }}>Admin login</button>
       </header>
-      <BrowserRouter>
+      <body>
         <ApplicationRoutes />
-      </BrowserRouter>
+      </body>
 
+      <footer>
+
+      </footer>
     </div>
   );
 }

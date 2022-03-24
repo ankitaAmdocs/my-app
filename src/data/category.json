@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Overview",
+    "description": "Overview of application",
+    "image": "https://nodered.org/images/guide-gettingstarted.png",
+    "id": "001",
+    "topics": [
+      {
+        "id": "101",
+        "title": "Overview",
+        "description": "Overview of experience 360 application",
+        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
+        "image": "https://api.doxtube.corp.amdocs.com/p/103/sp/10300/thumbnail/entry_id/0_7vtzljhe/version/100022/width/723/height/500",
+        "notes": "Add notes here...."
+      }
+    ]
+  },
+   {
+    "name": "SetUp",
+    "description": "How to do local env setup",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
+    "id": "002",
+    "topics": [
+      {
+        "id": "201",
+        "title": "Local env Setup using mock server",
+        "description": "Overview of experience 360 application",
+        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
+        "image": "https://api.doxtube.corp.amdocs.com/p/103/sp/10300/thumbnail/entry_id/0_7vtzljhe/version/100022/width/723/height/500",
+        "notes": "Add notes here...."
+      },
+      {
+        "id": "202",
+        "title": "How to deploy BC on OC env",
+        "description": "Overview of experience 360 application",
+        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
+        "image": "https://api.doxtube.corp.amdocs.com/p/103/sp/10300/thumbnail/entry_id/0_7vtzljhe/version/100022/width/723/height/500",
+        "notes": "Add notes here...."
+      }      
+    ]
+  },
+   {
+    "name": "Creating a new Application",
+    "description": "Overview of application",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
+    "id": "003",
+    "topics": [
+      {
+        "id": "101",
+        "title": "Overview",
+        "description": "Overview of experience 360 application",
+        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
+        "image": "https://api.doxtube.corp.amdocs.com/p/103/sp/10300/thumbnail/entry_id/0_7vtzljhe/version/100022/width/723/height/500",
+        "notes": "Add notes here...."
+      }
+    ]
+  }
+]
