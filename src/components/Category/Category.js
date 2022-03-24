@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
-import Topic from '../Topic/Topic';
 const categoryData = require('../../data/category.json');
 
 const Category = () => {
@@ -17,12 +16,12 @@ const Category = () => {
           <div><p>{selectedCategory.description}</p>
             {selectedCategory?.topics.map((topic) => {
               return (
-                <Link to={`/homepage/${topic.id}`} activeClassName="active">
+                <Link to={`/homepage/${selectedCategory.id}/${topic.id}`} activeClassName="active">
                   <div className="post-preview">
                     <a href="local">
                       <div className="post-header">
                         <img src={topic.image} alt="" />
-                        <h2>{topic.name}</h2>
+                        <h2>{topic.title}</h2>
                       </div>
                       <div className="post-content">
                         {topic.description}

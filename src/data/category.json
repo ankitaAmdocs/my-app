@@ -11,11 +11,12 @@
         "description": "Overview of experience 360 application",
         "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
         "image": "https://nodered.org/images/guide-gettingstarted.png",
-        "notes": "Add notes here...."
+        "notes": "Add notes here....",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
       }
     ]
   },
-   {
+  {
     "name": "SetUp",
     "description": "How to do local env setup",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
@@ -27,7 +28,8 @@
         "description": "Overview of experience 360 application",
         "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
-        "notes": "Add notes here...."
+        "notes": "Add notes here....",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
       },
       {
         "id": "202",
@@ -35,11 +37,12 @@
         "description": "Overview of experience 360 application",
         "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
-        "notes": "Add notes here...."
-      }      
+        "notes": "Add notes here....",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
+      }
     ]
   },
-   {
+  {
     "name": "Creating a new Application",
     "description": "Overview of application",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
@@ -51,7 +54,8 @@
         "description": "Overview of experience 360 application",
         "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
-        "notes": "Add notes here...."
+        "notes": "Add notes here....",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
       }
     ]
   }

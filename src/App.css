@@ -429,4 +429,16 @@ ul.toc li.tocheader li.toctitle a {
   font-size: 0.9em;
 }
 
+.doc-callout {
+  margin: 10px 0px;
+  background: #FFFFE0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  border: 1px solid #BE9A9A;
+}
+h3 {
+  font-size: 1.563em;
+  margin: 1.5em 0 0.8em  -0.3em;
+}
 
