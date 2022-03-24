@@ -242,7 +242,7 @@ body {
   box-sizing: border-box;
   background: #eee;
   display: inline-flex;
-  width: calc(33% - 30px);
+  width: 300px;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
@@ -261,6 +261,7 @@ body {
   overflow: hidden;
   height: 200px;
   display: flex;
+  border: 1px solid #ccc;
 }
 
 .doc-items li .imageBox img {
@@ -280,9 +281,14 @@ body {
 }
 
 .doc-items p {
-  margin: 0;
-  font-size: 18px;
-  color: #777;
+margin: 0;
+font-size: 18px;
+color: #777;
+width: 260px;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
 }
  
 .doc-item-info {
