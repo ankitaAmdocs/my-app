@@ -509,7 +509,7 @@ ul.toc li.tocheader li.toctitle a {
   padding: 0 25px;
   position: relative;
   min-width: 130px;
-  max-width: 130px;
+  max-width: 160px;
   color: #22212e;
   background-image: none;
   text-transform: capitalize;
