@@ -16,10 +16,10 @@ const HomePage = () => {
           <div>
             <ul className="doc-items">
               {listItems}
-              {isLoggedIn && <li ><a className="box-link" href="/docs/user-guide"><img alt="imageText" src="https://www.iconpacks.net/icons/1/free-plus-icon-321-thumb.png" />
+              {isLoggedIn && <li><Link to="/category/create"><img alt="imageText" src="https://www.iconpacks.net/icons/1/free-plus-icon-321-thumb.png" />
                 <div className="doc-item-info">
                   <h2>Add Category</h2>
-                </div></a></li>}
+                </div></Link></li>}
             </ul>
           </div>
         </div>

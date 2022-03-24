@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
        <header className="App-header">
-         { window.location.pathname === '/homepage' && !isLoggedIn && <button className="login-button" onClick={() => { history.push("/loginpage") }}>Admin login</button>}
+         { (window.location.pathname === '/homepage' || window.location.pathname === '/') && !isLoggedIn && <button className="login-button" onClick={() => { history.push("/loginpage") }}>Admin login</button>}
       </header>
       <LoginContext.Provider value={{ isLoggedIn, setIsLoggedIn }} >
           <ApplicationRoutes />
