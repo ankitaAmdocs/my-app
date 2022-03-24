@@ -64,11 +64,11 @@ body {
 
 .grid {
 	width: 100%;
-	max-width: 1155px;
-	min-width: 755px;
+	max-width: 100%;
+	min-width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 0px 75px 0 75px;
+	padding: 0px 25px 0 25px;
 }
 
 .grid:after {
@@ -234,34 +234,70 @@ body {
 .doc-items {
   list-style-type: none;
   padding: 0;
-  margin:0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .doc-items li {
   box-sizing: border-box;
   background: #eee;
-  display: inline-block;
+  display: inline-flex;
   width: calc(33% - 30px);
-  margin: 10px 10px 50px 10px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
+
+.doc-items li:hover{
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%)
+}
+
 .doc-items li a.box-link {
-  padding: 15px 10px;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
-.doc-items img {
+
+.doc-items li .imageBox {
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+}
+
+.doc-items li .imageBox img {
   vertical-align: top;
-  margin-top: -50px;
+  width: 100%;
+  max-height: 200px;
+  display: block;
+  max-width: 100%;
+  vertical-align: bottom;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .doc-items h2 {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 20px;
-  color: #333;
+  color: #000;
 }
-.doc-items li a.box-link:hover h2 {
-  color: #eee;
+
+.doc-items p {
+  margin: 0;
+  font-size: 18px;
+  color: #777;
 }
+ 
 .doc-item-info {
-  padding: 10px;
+  height: 120px;
+  padding: 20px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-top-color: transparent;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
 }
 .docs {
   background: #eee;
@@ -274,13 +310,26 @@ body {
 }
 
 h1.docs-title {
-  border-bottom: 2px solid #B68181;
   padding-bottom: 10px;
   margin-top: 30px;
   margin-bottom: 40px;
   font-weight: normal;
-
+  position: relative;
+  font-size: 36px;
+  text-align: left;
 }
+
+h1.docs-title::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: #61dafb;
+}
+
+
 ul.fixed-toc {
   position: fixed;
   top: -28px;
@@ -348,8 +397,9 @@ ul.toc li.tocheader li.toctitle a {
   line-height: 18px;
 }
 .docs-content a {
-  color: #aa4444;
+  text-decoration: none;
 }
+
 .docs-content img {
   max-width: 100%;
 }
@@ -362,5 +412,184 @@ ul.toc li.tocheader li.toctitle a {
 .docs-content pre code {
   background: inherit;
   color: inherit;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  background: transparent url('https://retail-application-service-eu-d1-rt-expdev-smile.apps.ilocpde460.ocpd.corp.amdocs.com/retail/resources/images/Login-retail-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.login .loginwrappr {
+  background-color: rgba(255,255,255,.15);
+  width: 370px;
+  max-height: 520px;
+  min-height: 424px;
+  padding: 40px;
+  display: flex;
+  transition: all .5s ease;
+}
+
+.login .loginwrappr .loginform {
+  font-weight: 500;
+    font-size: 14px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    background: transparent;
+}
+
+.login .loginwrappr .loginform > h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.loginform input {
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  transition: all .3s ease-in-out;
+  margin: 20px 0;
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+  line-height: 50px;
+  min-height: 50px;
+  padding: 0 40px 0 20px;
+  border-radius: 0;
+  outline: none;
+  -webkit-user-select: text;
+  box-shadow : none;  
+  -webkit-appearance: none; 
+}
+
+.loginform input:focus {
+  outline: none;
+  box-shadow : none;  
+}
+
+.loginform input::placeholder {
+  color: #fff;
+}
+
+.login-button{
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 0;
+  white-space: nowrap;
+  height: 50px;
+  line-height: 47px;
+  padding: 0 25px;
+  position: relative;
+  min-width: 130px;
+  max-width: 130px;
+  color: #22212e;
+  background-image: none;
+  text-transform: capitalize;
+  background-color: #f6f7fc;
+  border-radius: 0;
+  transition: all .3s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  width: 100%; 
+  background-color: #e60f78;
+  color: #fff;
+}
+
+.post-preview {
+  background: white;
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 10px;
+  width: calc(100% / 3 - 30px);
+  overflow: hidden;
+  height: 250px;
+  text-overflow: ellipsis;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+.post-preview .post-header {
+  text-align: center;
+}
+.post-preview .post-header img {
+  max-width: 100px;
+}
+
+.post-preview > a {
+  padding: 10px 15px;
+  position: absolute;
+  top: 0; left:0; right: 0; bottom: 0;
+}
+.post-preview > a:hover {
+  text-decoration: none;
+}
+
+.post-preview:hover {
+  border-color: #999;
+  box-shadow: 0px 2px 3px 0 #aaa;
+}
+.post-preview .post-content {
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.9em;
+  overflow: hidden;
+  max-height: 180px;
+}
+.post-preview p {
+  margin: 0;
+}
+.post-preview h2 {
+  margin: 5px 0 5px;
+  font-size: 22px;
+}
+.post-preview h3 {
+  margin: 5px 0 5px;
+  font-size: 18px;
+}
+
+.post-preview .post-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  padding-right: 10px;
+  background: rgba(255,255,255,0.5);
+  text-align: right;
+}
+.post-preview .post-meta {
+  font-size: 0.9em;
+}
+
+.doc-callout {
+  margin: 10px 0px;
+  background: #FFFFE0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  border: 1px solid #BE9A9A;
+}
+h3 {
+  font-size: 1.563em;
+  margin: 1.5em 0 0.8em  -0.3em;
 }
 

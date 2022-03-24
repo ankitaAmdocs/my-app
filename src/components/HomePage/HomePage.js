@@ -29,16 +29,19 @@ const HomePage = () => {
   )
 };
 const listItems = categoryData.map((categoryItem) =>
-  <Link to={`/homepage/${categoryItem.name}`} activeClassName="active">
-    <li>
-      <img alt="imageText" src={categoryItem.image} />
-      <div className="doc-item-info">
-        <h2>{categoryItem.name}</h2>
-        <p>{categoryItem.description}</p>
-      </div>
-    </li>
-    { window.location.pathname !== '/homepage' &&<Category categoryItem> </Category>}
-  </Link>
+  <li>
+    <Link to={`/homepage/${categoryItem.id}`} activeClassName="active">
+
+        <div className='imageBox'>
+          <img alt="imageText" src={categoryItem.image} />
+        </div>
+        <div className="doc-item-info">
+          <h2>{categoryItem.name}</h2>
+          <p>{categoryItem.description}</p>
+        </div>
+
+    </Link>
+  </li>
 
 );
 HomePage.propTypes = {};

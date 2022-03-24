@@ -5,6 +5,7 @@ const HomePage = React.lazy(() => import('./components/HomePage/HomePage'));
 const LoginPage = React.lazy(() => import('./components/LoginPage/LoginPage'));
 const Category = React.lazy(() => import('./components/Category/Category'));
 const CategoryForm = React.lazy(() => import('./components/CategoryForm/CategoryForm'));
+const Topic = React.lazy(() => import('./components/Topic/Topic'));
 
 export const appRoutesConfig = [
     { path: '/', component: HomePage },
@@ -12,6 +13,7 @@ export const appRoutesConfig = [
     { path: '/loginpage', component: LoginPage },
     { path: '/homepage/:id', component: Category },
     { path: '/category/create', component: CategoryForm},
+    { path: '/homepage/:id/:id', component: Topic },
 ];
 
 export const createRoute = (path, component, props) => (
