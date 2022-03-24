@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import {Router} from 'react-router-dom';
+import ApplicationRoutes from './App.routes';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Router>
+      <ApplicationRoutes />
+      </Router>
     </div>
   );
 }
