@@ -29,7 +29,7 @@ const HomePage = () => {
   )
 };
 const listItems = categoryData.map((categoryItem) =>
-  <Link to={`/homepage/${categoryItem.name}`} activeClassName="active">
+  <Link to={`/homepage/${categoryItem.id}`} activeClassName="active">
     <li>
       <img alt="imageText" src={categoryItem.image} />
       <div className="doc-item-info">
@@ -37,7 +37,7 @@ const listItems = categoryData.map((categoryItem) =>
         <p>{categoryItem.description}</p>
       </div>
     </li>
-    { window.location.pathname !== '/homepage' &&<Category categoryItem> </Category>}
+    {window.location.pathname !== '/homepage' && <Category categoryItem={categoryItem} />}
   </Link>
 
 );
