@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Router} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import ApplicationRoutes from './App.routes';
 
 function App() {
@@ -20,9 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
-      <Router>
-      <ApplicationRoutes />
-      </Router>
+      <BrowserRouter>
+        <ApplicationRoutes />
+      </BrowserRouter>
+
     </div>
   );
 }
