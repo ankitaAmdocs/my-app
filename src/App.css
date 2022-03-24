@@ -424,7 +424,7 @@ ul.toc li.tocheader li.toctitle a {
 .login {
   width: 100%;
   height: 100%;
-  background: transparent url('https://retail-application-service-eu-d1-rt-expdev-smile.apps.ilocpde460.ocpd.corp.amdocs.com/retail/resources/images/Login-retail-bg.jpg') no-repeat center center;
+  background: transparent url('https://designshack.net/wp-content/uploads/background-textures.png') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -495,7 +495,7 @@ ul.toc li.tocheader li.toctitle a {
 
 .login-button{
   font-weight: 500;
-  font-size: 14px;
+  font-size: 20px;
   display: inline-block;
   margin-bottom: 0;
   text-align: center;
@@ -513,12 +513,11 @@ ul.toc li.tocheader li.toctitle a {
   color: #22212e;
   background-image: none;
   text-transform: capitalize;
-  background-color: #f6f7fc;
   border-radius: 0;
   transition: all .3s ease-in-out;
   -webkit-font-smoothing: antialiased;
   width: 100%; 
-  background-color: #e60f78;
+  background-color: #22212e;
   color: #fff;
 }
 
@@ -594,9 +593,21 @@ ul.toc li.tocheader li.toctitle a {
   border-radius: 3px;
   font-size: 0.85em;
   border: 1px solid #BE9A9A;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.doc-callout p {
+  padding-left: 15px;
 }
 h3 {
   font-size: 1.563em;
   margin: 1.5em 0 0.8em  -0.3em;
+}
+
+.grid-content {
+  display:block;
+  width: 100%;
+  text-align: left;
 }
 

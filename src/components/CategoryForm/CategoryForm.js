@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import TopicForm from '../TopicForm/TopicForm';
 import {v4 as uuidv4} from "uuid";
-import { addNewCategory } from '../../data/appendCategory';
 
 const CategoryForm = () => {
   const MAX_DESCRIPTION_LENGTH = 250;
@@ -51,8 +50,6 @@ const mapAndAddCategory = (categoryDetails, topics) => {
     ))
   };
   console.log("=====>> data prepared", categoryFormat);
-
-  addNewCategory(categoryFormat);
   
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import img from '../../images/stateSS.png';
 const categoryData = require('../../data/category.json');
 
 
@@ -11,24 +11,26 @@ const Topic = () => {
   const selectedTopic = selectedCategory.topics.filter((topic) => topic.id === topicId)[0]
   console.log("selectedTopic", selectedTopic);
   return (
+    <div className='grid'>
     <div className="docs-content">
       <h1 className="docs-title">{selectedTopic.title}</h1>
-      <p>{selectedTopic.description}</p>
       <div>
+      <div className='grid-content'>
+      <p>{selectedTopic.description}</p>
         <div className="doc-callout">
-          <div >
             <img src={selectedTopic.image} alt="" height="30" />
-          </div>
-          {selectedTopic.notes}
+            <p>{selectedTopic.notes}</p>
         </div>
-
         <h3 >DocxTube </h3>
-        <p>{selectedTopic.videoUrl}</p>
+        <a target="_blank" href= {selectedTopic.videoUrl}>
+        <img src={img} alt="" height='200px' />
+        </a>
         <h3 >Confluence</h3>
-        <p>{selectedTopic.confluenceLink}</p>
+        <a href= {selectedTopic.confluenceLink}>{selectedTopic.confluenceLink}</a>
       </div>
-
-    </div >
+      </div>
+    </div>
+    </div>
   )
 };
 
