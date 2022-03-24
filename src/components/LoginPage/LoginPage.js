@@ -22,17 +22,21 @@ const LoginPage = (props) => {
   }
   return (
     <div className='login'>
-      <h1>Login</h1>
-      {isError && <span style={{color:"red", visibility: true}}>Invalid username / password</span>}
-      <div>
-        <input placeholder='Username' type="text" autoFocus value={userName} onChange={e => setUserName(e.target.value)} />
-      </div>
-      <div>
-        <input placeholder='Password' type="password" value={password} onChange={e => setPassword(e.target.value)} />
-      </div>
-      <div>
-        <button disabled={!userName || !password} type="submit" onClick={login}>Login</button>
-      </div>
+      <div className='loginwrappr'>
+          <div className='loginform'>
+            <h1>Login</h1>
+            {isError && <span style={{color:"red", visibility: true}}>Invalid username / password</span>}
+            <div>
+              <input placeholder='Username' type="text" autoFocus value={userName} onChange={e => setUserName(e.target.value)} />
+            </div>
+            <div>
+              <input placeholder='Password' type="password" value={password} onChange={e => setPassword(e.target.value)} />
+            </div>
+            <div>
+              <button className='login-button' disabled={!userName || !password} type="submit" onClick={login}>Login</button>
+            </div>
+         </div>
+        </div>
     </div>
   );
 }

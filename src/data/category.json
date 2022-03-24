@@ -1,61 +1,79 @@
 [
   {
-    "name": "Overview",
-    "description": "Overview of application",
-    "image": "https://nodered.org/images/guide-gettingstarted.png",
+    "name": "PropsProvider",
+    "description": "Click on View Props Provider to add/update props, Props provider is like a function where all view variables are accessible. For e.g. you can transform api response using props provider. In props provider, we can work with certain variables and create own data structure like custom object/array. We can return and use the variable inside free code",
+    "image": "https://thumbs.dreamstime.com/b/props-phrase-overlap-color-no-transparency-concept-simple-text-typography-poster-sticker-design-apparel-print-greeting-card-139712620.jpg",
     "id": "001",
     "topics": [
       {
         "id": "101",
-        "title": "Overview",
-        "description": "Overview of experience 360 application",
-        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
-        "image": "https://nodered.org/images/guide-gettingstarted.png",
-        "notes": "Add notes here....",
-        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
+        "title": "Props Provider",
+        "description": "to add/update props",
+        "videoUrl": "https://doxtube.corp.amdocs.com/media/0_3bohlm22",
+        "image": "https://thumbs.dreamstime.com/b/props-phrase-overlap-color-no-transparency-concept-simple-text-typography-poster-sticker-design-apparel-print-greeting-card-139712620.jpg",
+        "notes": "In props provider, we can work with certain variables and create own data structure like custom object/array",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/media/0_3bohlm22"
       }
     ]
   },
   {
-    "name": "SetUp",
-    "description": "How to do local env setup",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
+    "name": "Hooks",
+    "description": "Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.",
+    "image": "https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png",
     "id": "002",
     "topics": [
       {
         "id": "201",
-        "title": "Local env Setup using mock server",
-        "description": "Overview of experience 360 application",
-        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
-        "notes": "Add notes here....",
-        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
+        "title": "State Hook",
+        "description": "Hooks are functions that let you “hook into” React state and lifecycle features from function components.",
+        "videoUrl": "https://doxtube.corp.amdocs.com/media/0_9l0yuw12",
+        "image": "https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png",
+        "notes": "The only argument to useState is the initial state",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/media/0_3bohlm22"
       },
       {
         "id": "202",
-        "title": "How to deploy BC on OC env",
-        "description": "Overview of experience 360 application",
-        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
-        "notes": "Add notes here....",
-        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
+        "title": "Effect Hook",
+        "description": "The Effect Hook, useEffect, adds the ability to perform side effects from a function component. It serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount in React classes, but unified into a single API",
+        "videoUrl": "https://doxtube.corp.amdocs.com/media/0_9l0yuw12",
+        "image": "https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png",
+        "notes": "When you call useEffect, you’re telling React to run your “effect” function after flushing changes to the DOM. Effects are declared inside the component so they have access to its props and state. By default, React runs the effects after every render — including the first render. ",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/media/0_3bohlm22"
+      },
+      {
+        "id": "203",
+        "title": "useContext",
+        "description": "Accepts a context object (the value returned from React.createContext) and returns the current context value for that context. The current context value is determined by the value prop of the nearest <MyContext.Provider> above the calling component in the tree.",
+        "videoUrl": "https://doxtube.corp.amdocs.com/media/0_9l0yuw12",
+        "image": "https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png",
+        "notes": "A component calling useContext will always re-render when the context value changes. If re-rendering the component is expensive, you can optimize it by using memoization.",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/media/0_3bohlm22"
+      },
+      {
+        "id": "202",
+        "title": "useMemo",
+        "description": "Returns a memoized value. Pass a “create” function and an array of dependencies. useMemo will only recompute the memoized value when one of the dependencies has changed. This optimization helps to avoid expensive calculations on every render",
+        "videoUrl": "https://doxtube.corp.amdocs.com/media/0_9l0yuw12",
+        "image": "https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png",
+        "notes": "Remember that the function passed to useMemo runs during rendering. Don’t do anything there that you wouldn’t normally do while rendering. For example, side effects belong in useEffect, not useMemo.",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/media/0_3bohlm22"
       }
     ]
   },
   {
-    "name": "Creating a new Application",
-    "description": "Overview of application",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
+    "name": "API",
+    "description": "HLS/HLD has API Details like which API and its method to call for particular feature.",
+    "image": "data:image/png;base64,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",
     "id": "003",
     "topics": [
       {
-        "id": "101",
-        "title": "Overview",
-        "description": "Overview of experience 360 application",
-        "videoUrl": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpBI8Ktx3tCG6bL-Hyg3Ft0RmwuQNqiyAxQ&usqp=CAU",
-        "notes": "Add notes here....",
-        "confluenceLink": "https://doxtube.corp.amdocs.com/playlist/dedicated/1880/0_h0ot7tf6/0_7vtzljhe"
+        "id": "209",
+        "title": "How to debug an API and check API response",
+        "description": "HLS/HLD has API Details like which API and its method to call for particular feature. Developer can refer to specific <API_Name>.ts availabled under dui-apis folder in UI_Base repo. Use selector to fetch the data from API to get updated data. Launch application in local env to debug API response. Put debugger breakpoints on api method and from there you can put multiple breakpoints in different files. Use Redux devtools to check data in specific slice. Slice name is available in <api-name>.config.ts. Context ID: If it is not passed context will get created on default path. You can use callstack in debugger tool to find the initiator.",
+        "videoUrl": "https://doxtube.corp.amdocs.com/media/0_9l0yuw12",
+        "image": "https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png",
+        "notes": "The only argument to useState is the initial state",
+        "confluenceLink": "https://doxtube.corp.amdocs.com/media/0_3bohlm22"
       }
     ]
   }
