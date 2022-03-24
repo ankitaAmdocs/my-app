@@ -16,7 +16,10 @@ const HomePage = () => {
           <div>
             <ul className="doc-items">
               {listItems}
-              {isLoggedIn && <li ><a className="box-link" href="/docs/user-guide"><img alt="imageText" src="https://www.iconpacks.net/icons/1/free-plus-icon-321-thumb.png" />
+              {isLoggedIn && <li ><a className="box-link" href="/docs/user-guide">
+                   <div className='imageBox'>
+                     <img alt="imageText" src="https://www.iconpacks.net/icons/1/free-plus-icon-321-thumb.png" />
+                    </div>
                 <div className="doc-item-info">
                   <h2>Add Category</h2>
                 </div></a></li>}
@@ -29,15 +32,19 @@ const HomePage = () => {
   )
 };
 const listItems = categoryData.map((categoryItem) =>
-  <Link to={`/homepage/${categoryItem.id}`} activeClassName="active">
-    <li>
-      <img alt="imageText" src={categoryItem.image} />
-      <div className="doc-item-info">
-        <h2>{categoryItem.name}</h2>
-        <p>{categoryItem.description}</p>
-      </div>
-    </li>
-  </Link>
+  <li>
+    <Link to={`/homepage/${categoryItem.id}`} activeClassName="active">
+
+        <div className='imageBox'>
+          <img alt="imageText" src={categoryItem.image} />
+        </div>
+        <div className="doc-item-info">
+          <h2>{categoryItem.name}</h2>
+          <p>{categoryItem.description}</p>
+        </div>
+
+    </Link>
+  </li>
 
 );
 HomePage.propTypes = {};
