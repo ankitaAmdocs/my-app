@@ -37,7 +37,6 @@ const listItems = categoryData.map((categoryItem) =>
         <p>{categoryItem.description}</p>
       </div>
     </li>
-    {window.location.pathname !== '/homepage' && <Category categoryItem={categoryItem} />}
   </Link>
 
 );
